@@ -1,0 +1,141 @@
+# 主题默认配置目录 themes/yun/_config.yml
+# 约定式配置，主题将自定义配置与默认配置进行合并，其余仍将自动采用默认配置
+favicon: /logo.ico 
+# ---------------------------------------UI配置项
+# 亮暗模式：可选 light | dark | time| auto
+mode : auto
+# 主题色
+colors:
+  primary: "#0078E7"
+  bg: "#f5f5f5"
+  selection_bg: "#33a3dc" #选取时颜色
+  tag_start_color: "#999999"
+  tag_end_color: "#0078E7"
+  dark:
+    block: "#1b1f2e"
+# 背景图片
+bg_image:
+  enable: true
+  url: /images/background.jpg
+  dark: /images/dark.jpg
+  opacity: 1
+# 首页的垂直交错排列文字效果，文字边框，底部云朵，翻页箭头等
+banner:
+  enable: true
+  title: 小文的破站
+  src: /js/ui/banner.js
+  border: false
+  cloud:
+    enable: true
+    color: "DeepSkyBlue"
+  go_down:
+    enable: true
+    icon: icon-arrow-down-s-line
+# 公告，它将显示在所有文章卡片的最上方，标语的下方。
+notice:
+  enable: true
+  content: 毛坯房，持续装修中
+# 头像配置
+avatar:
+  url: /images/avatar.jpg
+  status:
+    enable: true
+    emoji: 👨‍💻
+    message: 菜鸡的自我救赎
+# 侧边栏社交图标
+social:
+  - name: GitHub
+    link: https://github.com/SiQuan-Wen
+    icon: icon-github-line
+    color: "#181717"
+  - name: 微博
+    link: https://weibo.com/u/5849344015
+    icon: icon-weibo-line
+    color: "#E6162D"
+  - name: 知乎
+    link: https://www.zhihu.com/people/Chosen1-WSQ
+    icon: icon-zhihu-line
+    color: "#0084FF"
+  - name: 语雀
+    link: https://www.yuque.com/chosen1-wsq
+    icon: icon-yuque
+    color: "#47c479" 
+  - name: 哔哩哔哩
+    link: https://space.bilibili.com/23332164
+    icon: icon-bilibili-line
+    color: "#FF8EB3"
+  - name: 微信公众号
+    link: /images/wx.png
+    icon: icon-wechat-2-line
+    color: "#1AAD19"
+pages:
+  - name: 好用的黑科技
+    url: /links/
+    icon: icon-share-line
+    color: DimGray 
+sidebar:
+  bg_image: /images/slider-bg.jpg
+  bg_position: bottom 3rem center
+  tagcloud:
+    enable: false
+    amount: 20
+# 单击的烟花效果
+fireworks:
+  enable: true
+  colors:
+    - "102, 167, 221"
+    - "62, 131, 225"
+    - "33, 78, 194"
+# 光标特效
+cursor:
+  enable: true
+  default: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/css/md-cursors/pointer.cur
+  pointer: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/css/md-cursors/link.cur
+# 底部页脚设置
+footer:
+  since: 2021
+  icon:
+    name: icon-information-line
+    animated: true
+    color: "#0078E7"
+  powered:
+    enable: true
+  live_time:
+    enable: true
+    prefix: 本博客艰难的生存了
+    suffix: 🕓
+    start_time: "2021-09-01T00:00:00"
+# ---------------------------------------内容配置项
+# 文章内容展示
+types:
+  link:
+    color: blue
+    icon: icon-external-link-line
+  bilibili:
+    color: "#FF8EB3"
+    icon: icon-bilibili-line
+  github:
+    color: black
+    icon: icon-github-line
+  wechat:
+    color: "#1AAD19"
+    icon: icon-wechat-2-line
+  weibo:
+    color: "#E6162D"
+    icon: icon-weibo-line
+  yuque:
+    color: "#25b864"
+    icon: icon-yuque
+  zhihu:
+    color: "#0084FF"
+    icon: icon-zhihu-line
+archive:
+  last_word: 比较懒，先鸽一段时间 🕊
+# 标签页彩色词云
+wordcloud:
+  enable: true
+  height: 350
+# 打赏设置
+reward:
+  enable: false
+
