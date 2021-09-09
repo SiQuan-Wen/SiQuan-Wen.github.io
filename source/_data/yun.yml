@@ -132,9 +132,24 @@ footer:
 post_meta:
   item_text: true
   created_at: true
-  updated_at: true
+  updated_at: false
   categories: true
   tags: true
+# 代码显示设置
+# 关闭 highlight
+highlight:
+  enable: false
+# 启用 prism
+prismjs:
+  enable: true
+  preprocess: true
+  line_number: false
+  tab_replace: ""
+codeblock:
+  copy_btn: true
+  prismjs:
+    light: default
+    dark: tomorrow
 # 文章内容展示
 types:
   link:
