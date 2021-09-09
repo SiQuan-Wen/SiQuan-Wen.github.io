@@ -1,5 +1,8 @@
 # 主题默认配置目录 themes/yun/_config.yml
 # 约定式配置，主题将自定义配置与默认配置进行合并，其余仍将自动采用默认配置
+head:
+  css:
+    custom: /links/device.css
 favicon: /logo.ico 
 # ---------------------------------------UI配置项
 # 亮暗模式：可选 light | dark | time| auto
@@ -68,8 +71,27 @@ social:
     link: /images/wx.png
     icon: icon-wechat-2-line
     color: "#1AAD19"
+# 侧边导航设置
+menu:
+  home:
+    path: /
+    icon: icon-home-4-line
+  list:
+    - type: archives
+      path: /archives/
+      icon: icon-archive-line
+    - type: categories
+      path: /categories/
+      icon: icon-folder-2-line
+    - type: tags
+      path: /tags/
+      icon: icon-price-tag-3-line
+  custom:
+    title: 陋室
+    path: /home/
+    icon: icon-external-link-line
 pages:
-  - name: 好用的黑科技
+  - name: 分享
     url: /links/
     icon: icon-share-line
     color: DimGray 
@@ -106,6 +128,13 @@ footer:
     suffix: 🕓
     start_time: "2021-09-01T00:00:00"
 # ---------------------------------------内容配置项
+# 文章信息
+post_meta:
+  item_text: true
+  created_at: true
+  updated_at: true
+  categories: true
+  tags: true
 # 文章内容展示
 types:
   link:
